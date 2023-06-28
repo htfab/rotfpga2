@@ -15,7 +15,7 @@ module tt_um_seven_segment_seconds #( parameter MAX_COUNT = 10_000_000 ) (
     wire [6:0] led_out;
     assign uo_out[6:0] = led_out;
 
-    // use bidrectionals as outputs
+    // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
 
     // put bottom 8 bits of second counter out on the bidirectional gpio
