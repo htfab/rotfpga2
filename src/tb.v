@@ -17,9 +17,9 @@ module tb ();
     end
 
     // wire up the inputs and outputs
+    wire [7:0] compare;
     wire [6:0] segments = uo_out[6:0];
     wire [7:0] uo_out;
-    wire [7:0] ui_in;
     wire [7:0] uio_out;
     wire [7:0] uio_in;
     wire [7:0] uio_oe;
@@ -35,7 +35,7 @@ module tb ();
     `else
     tt_um_seven_segment_seconds #(.MAX_COUNT(1000)) tt_um_seven_segment_seconds (
     `endif
-        .ui_in      (ui_in),    // Dedicated inputs
+        .ui_in      (compare),    // Dedicated inputs
         .uo_out     (uo_out),   // Dedicated outputs
         .uio_in     (uio_in),   // IOs: Input path
         .uio_out    (uio_out),  // IOs: Output path
