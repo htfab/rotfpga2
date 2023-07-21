@@ -28,8 +28,8 @@ module tb ();
     wire [7:0] uio_out;
     wire [7:0] uio_oe;
 
-    // instantiate the DUT with lower MAX_COUNT for a faster sim
     tt_um_seven_segment_seconds tt_um_seven_segment_seconds (
+    // include power ports for the Gate Level test
     `ifdef GL_TEST
         .VPWR( 1'b1),
         .VGND( 1'b0),
