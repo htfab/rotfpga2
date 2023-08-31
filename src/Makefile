@@ -9,7 +9,11 @@ TOPLEVEL_LANG ?= verilog
 ifneq ($(GATES),yes)
 
 # this is the only part you should need to modify:
-VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/tt_um_seven_segment_seconds.v $(PWD)/decoder.v
+COMPILE_ARGS    += -DFUNCTIONAL
+COMPILE_ARGS    += -DUNIT_DELAY=\#1
+VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/logic_cell.v $(PWD)/logic_grid.v $(PWD)/tt_um_htfab_rotfpga2.v
+VERILOG_SOURCES += $(PDK_ROOT)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v
+VERILOG_SOURCES += $(PDK_ROOT)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v
 
 else
 

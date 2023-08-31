@@ -20,15 +20,26 @@ module tb ();
     reg  clk;
     reg  rst_n;
     reg  ena;
+    reg  in_se;
+    reg  in_sc;
+    reg  [1:0] in_cfg;
+    reg  in_lb;
+    reg  [1:0] in_lbc;
     reg  [7:0] ui_in;
-    reg  [7:0] uio_in;
 
-    wire [6:0] segments = uo_out[6:0];
+    wire [7:0] uio_in;
+    assign uio_in[0] = in_se;
+    assign uio_in[1] = in_sc;
+    assign uio_in[3:2] = in_cfg;
+    assign uio_in[4] = in_lb;
+    assign uio_in[6:5] = in_lbc;
+
     wire [7:0] uo_out;
     wire [7:0] uio_out;
     wire [7:0] uio_oe;
+    wire out_sc = uio_out[7];
 
-    tt_um_seven_segment_seconds tt_um_seven_segment_seconds (
+    tt_um_htfab_rotfpga2 dut (
     // include power ports for the Gate Level test
     `ifdef GL_TEST
         .VPWR( 1'b1),
@@ -45,3 +56,4 @@ module tb ();
         );
 
 endmodule
+

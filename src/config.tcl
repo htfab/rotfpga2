@@ -50,6 +50,9 @@ set ::env(RUN_CTS) 1
 set ::env(CLOCK_PERIOD) "20"
 set ::env(CLOCK_PORT) {clk}
 
+# use custom SDC file to ignore false paths in STA
+set ::env(BASE_SDC_FILE) "$::env(DESIGN_DIR)/base.sdc"
+
 # hold/slack margin
 # set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.8 
 # set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.8 
@@ -57,3 +60,6 @@ set ::env(CLOCK_PORT) {clk}
 # don't use power rings or met5
 set ::env(DESIGN_IS_CORE) 0
 set ::env(RT_MAX_LAYER) {met4}
+
+# increase target density
+set ::env(PL_TARGET_DENSITY) "0.82"
