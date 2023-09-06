@@ -33,7 +33,7 @@ documentation:
       ![Logic tile\label{rotfpga-tile}](img/rotfpga-tile-sf.pdf)
 
       ROTFPGA v2 is a reconfigurable logic circuit built from identical copies of the tile in
-      Figure \ref{rotfpga-tile} containing a NAND gate, a D flip-flop and a buffer, with each
+      Figure \ref*{rotfpga-tile} containing a NAND gate, a D flip-flop and a buffer, with each
       tile individually rotated or reflected as described by the FPGA configuration. It is a port
       of the original [ROTFPGA](https://github.com/htfab/rotfpga) from Caravel to TinyTapeout.
       Porting the design required a 50-fold decrease in chip area which was achieved using a
@@ -54,7 +54,7 @@ documentation:
 
       Each tile can be configured in 8 possible orientations. Bits 0, 1 and 2 correspond to a diagonal,
       horizontal and vertical flip respectively. Any rotation or reflection can be described as a
-      combination as shown in Figure \ref{rotfpga-rots}. (The bottom row looks somewhat different,
+      combination as shown in Figure \ref*{rotfpga-rots}. (The bottom row looks somewhat different,
       but we just rearranged the wires so that the inputs and outputs line up with the unmirrored tiles.)
 
       ![Rotations and reflections\label{rotfpga-rots}](img/rotfpga-rots-sf.pdf)
@@ -71,7 +71,7 @@ documentation:
 
       ![Grid model\label{rotfpga-grid}](img/rotfpga-grid-sf.pdf)
 
-      Figure \ref{rotfpga-grid} shows a 4×4 model of the tile grid. When the _scan enable_ input is 0,
+      Figure \ref*{rotfpga-grid} shows a 4×4 model of the tile grid. When the _scan enable_ input is 0,
       the FPGA operates normally and each tile sets its flip-flop to the input it receives from one of
       the neighboring tiles according to its current rotation/reflection (black arrows).
       When _scan enable_ is 1, it sets the flip-flop to the value received through the scan chain instead
@@ -101,7 +101,7 @@ documentation:
 
       ![Loop breaker tile classes\label{rotfpga-lbrk}](img/rotfpga-lbrk-sf.pdf)
 
-      Tiles are assigned to loop breaker classes according to Figure \ref{rotfpga-lbrk}.
+      Tiles are assigned to loop breaker classes according to Figure \ref*{rotfpga-lbrk}.
       The loop breaker latches a tile output if and only if the following conditions are all met:
 
       - The _loop breaker enable_ input is 1.
@@ -134,24 +134,24 @@ documentation:
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - tile(0,0) left input
-    - tile(0,1) left input
-    - tile(0,2) left input
-    - tile(0,3) left input
-    - tile(0,4) left input
-    - tile(0,5) left input
-    - tile(0,6) left input
-    - tile(0,7) left input
+    - tile(0,0) left in
+    - tile(0,1) left in
+    - tile(0,2) left in
+    - tile(0,3) left in
+    - tile(0,4) left in
+    - tile(0,5) left in
+    - tile(0,6) left in
+    - tile(0,7) left in
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
-    - tile(7,0) right output
-    - tile(7,1) right output
-    - tile(7,2) right output
-    - tile(7,3) right output
-    - tile(7,4) right output
-    - tile(7,5) right output
-    - tile(7,6) right output
-    - tile(7,7) right output
+    - tile(7,0) right out
+    - tile(7,1) right out
+    - tile(7,2) right out
+    - tile(7,3) right out
+    - tile(7,4) right out
+    - tile(7,5) right out
+    - tile(7,6) right out
+    - tile(7,7) right out
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
     - _scan enable_ input
