@@ -10,3 +10,5 @@ src/gate_level_netlist.v
 src/results.xml
 src/user_config.tcl
 tt
+datasheet.md
+datasheet.pdf
