@@ -7,8 +7,8 @@ project:
 # Source files must be in ./src and you must list each source file separately
   source_files:
     - sky130_blackbox.v
-    - logic_cell.v
-    - logic_grid.v
+    - tile.v
+    - grid.v
     - tt_um_htfab_rotfpga2.v
   top_module:  "tt_um_htfab_rotfpga2"      # put the name of your top module here, make it unique by prepending your github username
 

@@ -54,10 +54,10 @@ class Cells:
         self.dut, self.height, self.width = dut, height, width
     def path(self, y, x, comp):
         try:
-            return getattr(self.dut.dut.lg.g_y[y].g_x[x].lc, comp)
+            return getattr(self.dut.dut.g.g_y[y].g_x[x].t, comp)
         except AttributeError:
             try:
-                return self.dut.dut._id(f'\\lg.g_y[{y}].g_x[{x}].lc.{comp}', extended=False)
+                return self.dut.dut._id(f'\\g.g_y[{y}].g_x[{x}].t.{comp}', extended=False)
             except AttributeError:
                 class Missing:
                     value = '?'

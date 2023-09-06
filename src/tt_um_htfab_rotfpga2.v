@@ -11,7 +11,7 @@ module tt_um_htfab_rotfpga2 (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-    logic_grid lg (
+    grid g (
         .clk(clk),
         .rst_n(rst_n),
         .in_se(uio_in[0]),

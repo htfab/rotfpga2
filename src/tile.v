@@ -1,6 +1,6 @@
 `default_nettype none
 
-module logic_cell(
+module tile (
    input clk,     // clock
    input in_se,   // scan chain enable
    input in_sc,   // scan chain input

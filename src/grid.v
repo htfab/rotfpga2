@@ -1,6 +1,6 @@
 `default_nettype none
 
-module logic_grid (
+module grid (
    input clk,
    input rst_n,
    input in_se,
@@ -40,7 +40,7 @@ for (y=0; y<`HEIGHT; y=y+1) begin:g_y
    assign outs[y] = ic_r[y][`WIDTH];
    assign ic_sc[y][0] = (y > 0) ? ic_sc[y-1][`WIDTH] : in_sc_r;
    for (x=0; x<`WIDTH; x=x+1) begin:g_x
-      logic_cell lc (
+      tile t (
          .clk(clk),
          .in_se(in_se_r),
          .in_sc(ic_sc[y][x]),

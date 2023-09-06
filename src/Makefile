@@ -11,7 +11,7 @@ ifneq ($(GATES),yes)
 # this is the only part you should need to modify:
 COMPILE_ARGS    += -DFUNCTIONAL
 COMPILE_ARGS    += -DUNIT_DELAY=\#1
-VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/logic_cell.v $(PWD)/logic_grid.v $(PWD)/tt_um_htfab_rotfpga2.v
+VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/tile.v $(PWD)/grid.v $(PWD)/tt_um_htfab_rotfpga2.v
 VERILOG_SOURCES += $(PWD)/sky130/primitives.v $(PWD)/sky130/sky130_fd_sc_hd.v
 
 else
