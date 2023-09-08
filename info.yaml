@@ -30,10 +30,8 @@ documentation:
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      ![Logic tile\label{rotfpga-tile}](img/rotfpga-tile-sf.pdf)
-
       ROTFPGA v2 is a reconfigurable logic circuit built from identical copies of the tile in
-      Figure \ref*{rotfpga-tile} containing a NAND gate, a D flip-flop and a buffer, with each
+      Figure _(a)_ containing a NAND gate, a D flip-flop and a buffer, with each
       tile individually rotated or reflected as described by the FPGA configuration. It is a port
       of the original [ROTFPGA](https://github.com/htfab/rotfpga) from Caravel to TinyTapeout.
       Porting the design required a 50-fold decrease in chip area which was achieved using a
@@ -54,10 +52,8 @@ documentation:
 
       Each tile can be configured in 8 possible orientations. Bits 0, 1 and 2 correspond to a diagonal,
       horizontal and vertical flip respectively. Any rotation or reflection can be described as a
-      combination as shown in Figure \ref*{rotfpga-rots}. (The bottom row looks somewhat different,
+      combination as shown in Figure _(d)_. (The bottom row looks somewhat different,
       but we just rearranged the wires so that the inputs and outputs line up with the unmirrored tiles.)
-
-      ![Rotations and reflections\label{rotfpga-rots}](img/rotfpga-rots-sf.pdf)
 
       Tiles are arranged in an 8×8 grid:
 
@@ -69,9 +65,7 @@ documentation:
       - There is a scan chain meandering through all the tiles, visiting lines from top to bottom and within
         each line going from left to right.
 
-      ![Grid model\label{rotfpga-grid}](img/rotfpga-grid-sf.pdf)
-
-      Figure \ref*{rotfpga-grid} shows a 4×4 model of the tile grid. When the _scan enable_ input is 0,
+      Figure _(c)_ shows a 4×4 model of the tile grid. When the _scan enable_ input is 0,
       the FPGA operates normally and each tile sets its flip-flop to the input it receives from one of
       the neighboring tiles according to its current rotation/reflection (black arrows).
       When _scan enable_ is 1, it sets the flip-flop to the value received through the scan chain instead
@@ -99,9 +93,7 @@ documentation:
       oscillators. To help debug such designs, the chip has a loop breaker mechanism using
       a _loop breaker enable_ input as well as a 2-bit _loop breaker class_ input.
 
-      ![Loop breaker tile classes\label{rotfpga-lbrk}](img/rotfpga-lbrk-sf.pdf)
-
-      Tiles are assigned to loop breaker classes according to Figure \ref*{rotfpga-lbrk}.
+      Tiles are assigned to loop breaker classes according to Figure _(b)_.
       The loop breaker latches a tile output if and only if the following conditions are all met:
 
       - The _loop breaker enable_ input is 1.
@@ -167,6 +159,6 @@ documentation:
   tag:          "fpga, puzzle"     # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
   external_hw:  ""      # Describe any external hardware needed
   discord:      "h.tamas"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
-  doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
+  doc_link:     "https://github.com/htfab/rotfpga2/blob/main/README.md"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     10000000       # Clock frequency in Hz (if required)
-  picture:      ""      # relative path to a picture in your repository
+  picture:      "img/rotfpga-comb.pdf"      # relative path to a picture in your repository

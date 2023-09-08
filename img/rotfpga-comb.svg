@@ -28,14 +28,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.0993894"
-     inkscape:cx="344.28203"
-     inkscape:cy="438.4252"
+     inkscape:cx="287.88708"
+     inkscape:cy="438.42518"
      inkscape:window-width="1920"
      inkscape:window-height="1215"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g41660" />
+     inkscape:current-layer="g41010" />
   <defs
      id="defs12480" />
   <g
@@ -318,7 +318,9 @@
            style="font-size:4.23333px;text-align:center;text-anchor:middle;stroke-width:0.150342"
            x="23.982222"
            y="56.280823"
-           dx="0 0 0 0 0 0 0 0 -0.55394191 0 0.55394191 -0.27697095">subfig. 1: single tile</tspan></text>
+           dx="0 0 0 0.55394191 -0.27697095"><tspan
+   style="font-style:italic"
+   id="tspan1175">(a)</tspan> single tile</tspan></text>
     </g>
     <g
        id="g41010"
@@ -781,7 +783,9 @@
            style="font-size:4.23333px;text-align:center;text-anchor:middle;stroke-width:0.150342"
            x="23.935184"
            y="116.28082"
-           dx="0 0 0 0 0 0 0 0 0 0 0.55394191 -0.27697095">subfig. 2: loop breaker</tspan></text>
+           dx="0 0 0 0.55394191 -0.27697095"><tspan
+   style="font-style:italic"
+   id="tspan1177">(b)</tspan> loop breaker classes</tspan></text>
     </g>
     <g
        id="g41255"
@@ -2081,7 +2085,9 @@
            style="font-size:4.23333px;text-align:center;text-anchor:middle;stroke-width:0.150342"
            x="117.9805"
            y="118.28082"
-           dx="0 0 0 0 0 0 0 0 0 0 0.83091289 -0.27697095">subfig. 3: grid model</tspan></text>
+           dx="0 0 0 0.83091289 -0.27697095"><tspan
+   style="font-style:italic"
+   id="tspan1179">(c)</tspan> grid model</tspan></text>
     </g>
     <g
        id="g41660"
@@ -4262,7 +4268,9 @@
            style="font-size:4.23333px;text-align:center;text-anchor:middle;stroke-width:0.150342"
            x="90.008591"
            y="224.28082"
-           dx="0 0 0 0 0 0 0 0 0 0 0 0.27697095">subfig. 4: rotations and reflections</tspan></text>
+           dx="0 0 0 0 0.27697095"><tspan
+   style="font-style:italic"
+   id="tspan1181">(d)</tspan> rotations and reflections</tspan></text>
     </g>
   </g>
 </svg>
