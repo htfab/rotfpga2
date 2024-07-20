@@ -5,14 +5,16 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 
+SRC = $(PWD)/../src
+
 # normal simulation
 ifneq ($(GATES),yes)
 
 # this is the only part you should need to modify:
 COMPILE_ARGS    += -DFUNCTIONAL
 COMPILE_ARGS    += -DUNIT_DELAY=\#1
-VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/tile.v $(PWD)/grid.v $(PWD)/tt_um_htfab_rotfpga2.v
-VERILOG_SOURCES += $(PWD)/sky130/primitives.v $(PWD)/sky130/sky130_fd_sc_hd.v
+VERILOG_SOURCES += $(PWD)/tb.v $(SRC)/tile.v $(SRC)/grid.v $(SRC)/tt_um_htfab_rotfpga2.v
+VERILOG_SOURCES += $(SRC)/sky130/primitives.v $(SRC)/sky130/sky130_fd_sc_hd.v
 
 else
 
