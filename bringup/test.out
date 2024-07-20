@@ -1,0 +1,146 @@
+ttboard.config.config_file: Loaded config config.ini
+ttboard.demoboard: Demoboard starting up in mode ASIC_RP_CONTROL
+ttboard.pins.pins: Setting mode to ASIC_RP_CONTROL
+ttboard.boot.rom: Got ROM data shuttle=tt04
+repo=TinyTapeout/tinytapeout-04
+
+ttboard.project_mux: Disable (selecting project 0)
+ttboard.project_mux: Chip reported by ROM is tt04 commit FAKEDATA
+ttboard.project_mux: Loading shuttle file /shuttles/tt04.json
+ttboard.project_mux: Already have a "wokwi_traffic_light" here...
+ttboard.project_mux: Enable design tt_um_factory_test
+ttboard.pins.standard: Disabling pwm on rp_projclk
+ttboard.project_mux: Enable design tt_um_htfab_rotfpga2
+ttboard.demoboard: Changing reset to output mode
+testing configuration upload
+testing data upload, single step & download
+round 0, data upload
+round 0, propagation test 1
+round 0, single step
+round 0, propagation test 2
+round 0, data download
+TEST PASSED: 0b110100111 == 0b110100111
+round 1, data upload
+round 1, propagation test 1
+round 1, single step
+round 1, propagation test 2
+round 1, data download
+TEST PASSED: 0b11101111 == 0b11101111
+round 2, data upload
+round 2, propagation test 1
+round 2, single step
+round 2, propagation test 2
+round 2, data download
+TEST PASSED: 0b111001101 == 0b111001101
+round 3, data upload
+round 3, propagation test 1
+round 3, single step
+round 3, propagation test 2
+round 3, data download
+TEST PASSED: 0b101011111 == 0b101011111
+round 4, data upload
+round 4, propagation test 1
+round 4, single step
+round 4, propagation test 2
+round 4, data download
+TEST PASSED: 0b10011111 == 0b10011111
+round 5, data upload
+round 5, propagation test 1
+round 5, single step
+round 5, propagation test 2
+round 5, data download
+TEST PASSED: 0b11111110 == 0b11111110
+round 6, data upload
+round 6, propagation test 1
+round 6, single step
+round 6, propagation test 2
+round 6, data download
+TEST PASSED: 0b01101111 == 0b01101111
+round 7, data upload
+round 7, propagation test 1
+round 7, single step
+round 7, propagation test 2
+round 7, data download
+TEST PASSED: 0b101111011 == 0b101111011
+round 8, data upload
+round 8, propagation test 1
+round 8, single step
+round 8, propagation test 2
+round 8, data download
+TEST PASSED: 0b101011110 == 0b101011110
+round 9, data upload
+round 9, propagation test 1
+round 9, single step
+round 9, propagation test 2
+round 9, data download
+TEST PASSED: 0b111110110 == 0b111110110
+round 10, data upload
+round 10, propagation test 1
+round 10, single step
+round 10, propagation test 2
+round 10, data download
+TEST PASSED: 0b11111010 == 0b11111010
+round 11, data upload
+round 11, propagation test 1
+round 11, single step
+round 11, propagation test 2
+round 11, data download
+TEST PASSED: 0b111111001 == 0b111111001
+round 12, data upload
+round 12, propagation test 1
+round 12, single step
+round 12, propagation test 2
+round 12, data download
+TEST PASSED: 0b101110011 == 0b101110011
+round 13, data upload
+round 13, propagation test 1
+round 13, single step
+round 13, propagation test 2
+round 13, data download
+TEST PASSED: 0b110110111 == 0b110110111
+round 14, data upload
+round 14, propagation test 1
+round 14, single step
+round 14, propagation test 2
+round 14, data download
+TEST PASSED: 0b111110100 == 0b111110100
+round 15, data upload
+round 15, propagation test 1
+round 15, single step
+round 15, propagation test 2
+round 15, data download
+TEST PASSED: 0b111101101 == 0b111101101
+round 16, data upload
+round 16, propagation test 1
+round 16, single step
+round 16, propagation test 2
+round 16, data download
+TEST PASSED: 0b110111001 == 0b110111001
+round 17, data upload
+round 17, propagation test 1
+round 17, single step
+round 17, propagation test 2
+round 17, data download
+TEST PASSED: 0b110011111 == 0b110011111
+testing io & multi-step propagation
+zero input
+TEST PASSED: 0b01010101 == 0b01010101
+custom input, step 0
+custom input, step 1
+custom input, step 2
+TEST PASSED: 0b10011100 == 0b10011100
+testing loop breaker
+reconfiguration
+zero input, manual cycles
+TEST PASSED: 0b10101010 == 0b10101010
+custom input, manual cycles, step 0
+custom input, manual cycles, step 1
+custom input, manual cycles, step 2
+TEST PASSED: 0b11010010 == 0b11010010
+zero input, automatic cycles
+TEST PASSED: 0b10101010 == 0b10101010
+custom input, automatic cycles
+TEST PASSED: 0b11010010 == 0b11010010
+finished
+24 out of 24 tests passed
+ALL TESTS PASSED
